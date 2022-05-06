@@ -192,11 +192,10 @@ body {
   background-color: #edf0f9;
   border-radius: 0px 0px 20px 20px;
   padding: 30px;
-  min-height: 300px;
-  width: 100%;
 }
 
 .course__list {
+  align-items: stretch;
 }
 
 .course__desc {
@@ -213,12 +212,11 @@ body {
 }
 .course__btn {
   padding: 20.5px 59px;
+  margin: 0 0 30px 29.14px;
   color: #ffffff;
   background-color: #3f2aff;
   border-radius: 20px;
   border: none;
-  position: absolute;
-  bottom: 30px;
 }
 
 .course__img {
@@ -227,13 +225,17 @@ body {
   width: 100%;
 }
 
-.course__item {
+.course__item-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #edf0f9;
   position: relative;
   border-radius: 0px 0px 20px 20px;
   overflow: hidden;
   margin-bottom: 30px;
   height: 100%;
-  min-height: 480px;
 }
 
 .course__time {
