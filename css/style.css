@@ -28,7 +28,8 @@ body {
 }
 .list {
 }
-.list__item {
+.list__item:last-child {
+  padding-right: 0;
 }
 
 .list__link {
@@ -164,11 +165,14 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #85859b;
-  max-width: 254px;
 }
 
 .teacher__img_width {
   width: 100%;
+}
+
+.course__item {
+  margin-bottom: 30px;
 }
 
 .course__subtitle {
@@ -190,7 +194,7 @@ body {
 
 .course__text {
   background-color: #edf0f9;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 20px;
   padding: 30px;
 }
 
@@ -221,8 +225,10 @@ body {
 
 .course__img {
   display: block;
+  object-fit: cover;
   border-radius: 20px 20px 0 0;
   width: 100%;
+  height: 180px;
 }
 
 .course__item-wrapper {
@@ -232,7 +238,7 @@ body {
   justify-content: space-between;
   background: #edf0f9;
   position: relative;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 20px;
   overflow: hidden;
   margin-bottom: 30px;
   height: 100%;
